@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "scsnowmanify",
+  "version": "0.0.1",
+  "description": "Replaces the active tab's content with an scsnowman.",
+  "homepage_url": "https://github.com/tsuu32/scsnowmanify",
+  "icons": {
+    "48": "img/scsnowmanify-icon.svg"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "browser_action": {
+    "default_icon": "img/scsnowmanify-icon.svg",
+    "default_title": "scsnowmanify"
+  },
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ]
+  },
+  "web_accessible_resources": [
+    "img/scsnowman.svg"
+  ]
+}

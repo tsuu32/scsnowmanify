@@ -1,0 +1,13 @@
+{
+  "name": "scsnowmanify",
+  "version": "0.0.1",
+  "description": "Replaces the active tab's content with an scsnowman.",
+  "scripts": {
+    "start:firefox": "web-ext run -s ./src/"
+  },
+  "license": "BSD-2-Clause",
+  "dependencies": {},
+  "devDependencies": {
+    "web-ext": "^4.1.0"
+  }
+}
