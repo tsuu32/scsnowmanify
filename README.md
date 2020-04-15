@@ -10,3 +10,4 @@ Toggle replacing with an scsnowman image when the icon in toolbar is clicked.
 
 ## See also
 * https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_second_WebExtension
+* https://github.com/aminophen/scsnowman
