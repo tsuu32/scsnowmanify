@@ -1,7 +1,3 @@
-const hidePage = `body > :not(.scsnowmanify-image) {
-                    display: none;
-                  }`;
-
 const tabsMapping = {};
 
 function toggleCurrentTab (tab) {
@@ -11,21 +7,21 @@ function toggleCurrentTab (tab) {
   browser.tabs.executeScript({file: "js/content.js"})
     .then(() => {
       if (toBeEnabled) {
-        browser.tabs.insertCSS({code: hidePage});
+        browser.tabs.insertCSS({file: "css/content.css"});
         browser.tabs.sendMessage(tabId, {
           command: "scsnowmanify",
           scsnowmanURL: browser.extension.getURL("img/scsnowman.svg")
         });
         browser.browserAction.setBadgeText({
-          text: "✓",
+          text: "☂",
           tabId: tabId
         });
         browser.browserAction.setBadgeBackgroundColor({
-          color: '#008040',
+          color: '#2060c0',
           tabId: tabId
         });
       } else {
-        browser.tabs.removeCSS({code: hidePage});
+        browser.tabs.removeCSS({file: "css/content.css"});
         browser.tabs.sendMessage(tabId, {
           command: "reset",
         });

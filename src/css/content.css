@@ -1,0 +1,12 @@
+body > :not(.scsnowmanify-image) {
+  display: none;
+}
+
+.scsnowmanify-image {
+  height: 100vh;
+  animation: spinner 12s steps(12, end) infinite;
+}
+
+@keyframes spinner {
+  to { transform: rotate(360deg); }
+}

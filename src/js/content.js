@@ -13,7 +13,6 @@
     removeExistingScsnowmans();
     let scsnowmanImage = document.createElement("img");
     scsnowmanImage.setAttribute("src", scsnowmanURL);
-    scsnowmanImage.style.height = "100vh";
     scsnowmanImage.className = "scsnowmanify-image";
     document.body.appendChild(scsnowmanImage);
   }
